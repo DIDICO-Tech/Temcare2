@@ -419,22 +419,11 @@ header a {
 }
 
 .products {
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
-    height: 300px;
     max-width: 100%; 
     margin: 20px;
+    background-color: white;
 }
 
-.products2 {
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
-    height: 200px;
-    max-width: 100%; 
-    margin-top: 20px;
-}
 .products h4 {
     background: rgb(60, 56, 56);
     width: 150px;
@@ -446,12 +435,16 @@ header a {
 .category {
     background-color: white;
     margin: 40px;
-    height: 1000px;
     max-width: 100%;
+}
+
+.category h1 {
+    text-align: center;
+    margin-top: 20px;
 }
 .sample {
     position:relative;
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
@@ -461,17 +454,18 @@ header a {
 
 .drug {
     background: rgb(236, 230, 230);
-    height: 300px;
-    width: 250px;
+    height: 400px;
+    width: 50%;
     border-radius: 20px;
+    margin: 20px;
     
 }
 
 .drug img {
-    width: 200px;
+    width: 400px;
     max-width: 200px;
-    height: 150px;
-    margin: 10px 25px;
+    height: 200px;
+    margin: 10px 20%;
 }
 .drug h3{
     text-align: center;
