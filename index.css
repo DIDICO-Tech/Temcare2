@@ -1,0 +1,564 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(216, 246, 236);
+}
+
+/* Header Section */
+
+#first {
+    height: 60px;
+    display: flex;
+}
+
+#logo {
+    height: 70px;
+    position: relative;
+    width: 40%;
+}
+ .logo {
+    width: 70px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    transition: 4s ease-in-out;
+}
+
+#span {
+    display: flex;
+
+    margin: 10px;   
+}
+
+
+span {
+    padding: 10px ;
+}
+
+.icon {
+    font-size: .7cm;
+    color: rgb(34, 1, 1);
+    border-radius: 5%;
+}
+
+#first button {
+    margin: 20px 50px 20px 10px;
+    background: rgba(9, 30, 30, 0.793);
+    height: 30px;
+    width: 70px;
+    border-radius: 10%;
+    color: white;
+}
+
+
+header {
+    height: 50px;
+    background-color: rgb(9, 56, 57);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 30%;
+
+}
+header a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.header .top {
+    position: relative;
+    margin-left: 50px;
+}
+
+/* Section 2 - Tem-care*/
+
+.temcare {
+    border-radius: 50px;
+    min-width: 95%;
+    width: 95%;
+    background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
+    height: 400px;
+    margin: 10px;
+    animation-name: taiwo;
+    animation-duration: 6s;
+    transition: 4s ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+.temcare h1 {
+    color: white;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    animation-name: H1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.temcare h2 {
+    color: rgb(16, 223, 202);
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: 2s ease-in;
+    animation-name: H2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.temcare p {
+    color: BLACK;
+    margin-left: 35px;
+    font-size: 16px;
+    font-style: italic;
+    transition: 3s ease-in-out;
+    animation-name: p;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.temcare img {
+    width: 120px;
+    height: 120px;
+    margin: 10px 0 5px 8%;
+    animation-name: tem;
+    animation-duration: 8s;
+    transition: 6s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes taiwo {
+    0% {background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
+        background-repeat: no-repeat;
+    }
+    40% {background-image: url(Female\ Doctor.jpg);
+    }
+    60% {background-image: url(istockphoto-1142519210-612x612.jpg);
+    }
+    80% {background-image: url(istockphoto-1142519210-612x612.jpg);
+    }
+    100% {background-image: url(istockphoto-1142519210-612x612.jpg);
+    }
+    }
+@keyframes H1 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+        
+    }
+
+    80% {
+        opacity: 1;
+        color: rgb(16, 236, 111)
+    }
+
+    100% {
+        opacity: 1;
+        color: rgb(24, 214, 243)
+    }
+}
+
+@keyframes H2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.2;
+        color: rgb(16, 236, 111)
+    }
+
+    60% {
+        opacity: 0.5;
+        color: rgb(16, 236, 111)
+    }
+
+    80% {
+        opacity: 1;
+        color: rgb(16, 236, 111)
+    }
+
+    100% {
+        opacity: 1;
+        color: rgb(24, 214, 243)
+    }
+}
+
+@keyframes p {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .5;
+    }
+
+    40% {
+    
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tem {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .5;
+    }
+
+    40% {
+    
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Images Slider Section*/ 
+
+.slide {
+    margin: 30px;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
+}
+
+.about {
+    width: 40%;
+}
+
+.display {
+    width: 40%;
+    margin: 10px;
+    height: 350px;
+    background: url(istockphoto-458633357-612x612.jpg);
+    background-repeat: no-repeat;
+    animation-name: display;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    transition: 2s linear;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    bottom: -300px;
+    left: 20%;
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .2cm;
+    height: .2cm;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    transition: opacity ease .5s;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* Services Section */
+.taiwo {
+    background: white;
+    margin: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    width: 90%; 
+    height: 450px;
+    margin: 20px 60px;
+    background: rgb(244, 248, 248);
+}
+
+.roles {
+    width: 45%;
+    height: 450px;
+    
+}
+
+.roles img {
+    height: 250px;
+    width: 400px;
+    margin: 20px;
+    
+}
+.roles button {
+    width: 250px;
+    height: 70px;
+    color: white;
+    background-color: rgb(208, 74, 199);
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 15%;
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+
+.available h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+@keyframes display {
+    0% { background: url(istockphoto-458633357-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    10% { background: url(istockphoto-945003362-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    20% { background: url(istockphoto-1031157406-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    30% { background: url(istockphoto-1010455772-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    40% { background: url(istockphoto-458633357-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    50% { background: url(istockphoto-1090411638-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    60% { background: url(istockphoto-2193211858-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    70% { background: url(istockphoto-2052951686-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    80% { background: url(home\ care.jpg);}
+
+    90% { background: url(istockphoto-458633357-612x612.jpg);
+        background-repeat: no-repeat;}
+
+    100% { background: url(istockphoto-458633357-612x612.jpg);
+        background-repeat: no-repeat;}
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    height: 300px;
+    max-width: 100%; 
+    margin: 20px;
+}
+
+.products2 {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    height: 200px;
+    max-width: 100%; 
+    margin-top: 20px;
+}
+.products h4 {
+    background: rgb(60, 56, 56);
+    width: 150px;
+    text-align: center;
+    color: aqua;
+    font-size: 15px;
+}
+
+.category {
+    background-color: white;
+    margin: 40px;
+    height: 1000px;
+    max-width: 100%;
+}
+.sample {
+    position:relative;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    column-gap: 10px;
+
+}
+
+.drug {
+    background: rgb(236, 230, 230);
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    
+}
+
+.drug img {
+    width: 200px;
+    max-width: 200px;
+    height: 150px;
+    margin: 10px 25px;
+}
+.drug h3{
+    text-align: center;
+    font-weight: 700;
+}
+.drug button {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 0, 140);
+    color: white;
+    border: none;
+    margin-left: 25%;
+}
+
+footer {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 10px;
+    background: rgb(49, 47, 47);
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+footer h3 {
+    color: white;
+    margin-top: 10px;
+}
+
+.customer {
+    display: block;
+    margin-left: 20px;
+}
+
+.contact {
+width: 20%;
+
+}
+
+.newsletter {
+    width: 20%;
+}
+
+.newsletter input {
+    height: 40px;
+    font-size: 20px;
+}
+
+.newsletter img {
+    height: 150px;
+}
+.newsletter h2 {
+    color:aqua  
+}
+
+
+
+
+
+@media(max-width:768px) {
+    .services {
+        display: block;
+        width: 200%;
+    }
+    .sample {
+        display: block;
+        width: 100%;
+    }
+    .slide {
+        display:block;
+        width: 100%;
+    }
+    .about {
+        width: 100%;
+    }
+    
+    .display {
+        width: 100%;
+    }
+    header a {
+        font-size: 15px;
+    }
+}
