@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -12,39 +13,25 @@ body {
 /* Header Section */
 
 #first {
-    height: 60px;
+
+    height: 80px;
     display: flex;
+    justify-content: space-between;
 }
 
-#logo {
-    height: 70px;
-    position: relative;
-    width: 40%;
-}
  .logo {
-    width: 70px;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 50px;
-    transition: 4s ease-in-out;
+    width: 60px;
+    height: 50px;
+    margin: 10px 50px;
 }
 
 #span {
-    display: flex;
-
-    margin: 10px;   
-}
-
-
-span {
-    padding: 10px ;
+    display:flex;
 }
 
 .icon {
-    font-size: .7cm;
+    font-size: 1cm;
     color: rgb(34, 1, 1);
-    border-radius: 5%;
 }
 
 #first button {
@@ -58,41 +45,69 @@ span {
 
 
 header {
-    height: 50px;
+    width: 100%;
+    height: 40px;
     background-color: rgb(9, 56, 57);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px 10px 30%;
 
 }
 header a {
-    padding: 10px;
+    
+    padding-left:15px;
     color: white;
     text-decoration: none;
+    font-size: 15px;
 }
-.header .top {
-    position: relative;
-    margin-left: 50px;
+
+nav {
+    margin: 10px 0 10px 30%;
+}
+
+#mobile {
+    background-color: rgb(9, 56, 57);
+    height: 40px;
+    display: none;
+}
+
+#mobile button {
+    margin: 5px 0 5px 200px;
+    background: rgb(255, 255, 255);
+    height: 30px;
+    width: 70px;
+    border-radius: 10%;
+    color: rgb(4, 17, 20);
+    font-weight: 700;
+}
+
+.mobile {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(9, 56, 57);
+    margin: 5px 50px;
+    height: 30px;
+    width: 80px;
+    border: none;
 }
 
 /* Section 2 - Tem-care*/
 
 .temcare {
     border-radius: 50px;
-    min-width: 95%;
-    width: 95%;
+    max-width: 100%;
+    width: 98%;
     background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
-    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
     margin: 10px;
     animation-name: taiwo;
-    animation-duration: 6s;
-    transition: 4s ease-in-out;
+    animation-duration: 10s;
+    transition: 2s ease-in-out;
     animation-iteration-count: infinite;
     
 }
 .temcare h1 {
     color: white;
-    margin-left: 25px;
+    margin-left: 50px;
     font-size: 30px;
     font-weight: 700;
     opacity: 0;
@@ -104,7 +119,7 @@ header a {
 
 .temcare h2 {
     color: rgb(16, 223, 202);
-    margin-left: 5%;
+    margin-left: 110px;
     font-size: 30px;
     font-weight: 700;
     opacity: 0;
@@ -116,22 +131,22 @@ header a {
 
 .temcare p {
     color: BLACK;
-    margin-left: 35px;
+    margin-left: 70px;
     font-size: 16px;
     font-style: italic;
     transition: 3s ease-in-out;
     animation-name: p;
-    animation-duration: 6s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
 }
 
 .temcare img {
     width: 120px;
     height: 120px;
-    margin: 10px 0 5px 8%;
+    margin: 50px 0 0 10%;
     animation-name: tem;
-    animation-duration: 8s;
-    transition: 6s ease-in-out;
+    animation-duration: 10s;
+    transition: 2s ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -139,13 +154,17 @@ header a {
     0% {background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
         background-repeat: no-repeat;
     }
-    40% {background-image: url(Female\ Doctor.jpg);
+    40% {background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
+        background-repeat: no-repeat;
     }
     60% {background-image: url(istockphoto-1142519210-612x612.jpg);
+        background-repeat: no-repeat;
     }
     80% {background-image: url(istockphoto-1142519210-612x612.jpg);
+        background-repeat: no-repeat;
     }
     100% {background-image: url(istockphoto-1142519210-612x612.jpg);
+        background-repeat: no-repeat;
     }
     }
 @keyframes H1 {
@@ -291,19 +310,18 @@ header a {
 .slide {
     margin: 30px;
     display:flex;
-    justify-content: space-between;
     justify-content: space-around;
     height: 400px;
-    width: 100%;
+    max-width: 95%;
 }
 
 .about {
     width: 40%;
+    text-align: justify;
 }
 
 .display {
-    width: 40%;
-    margin: 10px;
+    width: 50%;
     height: 350px;
     background: url(istockphoto-458633357-612x612.jpg);
     background-repeat: no-repeat;
@@ -317,9 +335,8 @@ header a {
     display: flex;
     column-gap: 10px;
     position: absolute;
-    bottom: -300px;
+    bottom: -400px;
     left: 20%;
-    z-index: 1;
 }
 
 .slider-nav a {
@@ -342,24 +359,25 @@ header a {
 }
 
 .services {
+    position: relative;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
     width: 90%; 
-    height: 450px;
+    height: 400px;
     margin: 20px 60px;
     background: rgb(244, 248, 248);
 }
 
 .roles {
     width: 45%;
-    height: 450px;
+    height: 400px;
     
 }
 
 .roles img {
-    height: 250px;
-    width: 400px;
+    height: 200px;
+    width: 350px;
     margin: 20px;
     
 }
@@ -368,7 +386,7 @@ header a {
     height: 70px;
     color: white;
     background-color: rgb(208, 74, 199);
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     margin-left: 15%;
     border-radius: 30px;
@@ -444,7 +462,7 @@ header a {
 }
 .sample {
     position:relative;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
@@ -455,7 +473,7 @@ header a {
 .drug {
     background: rgb(236, 230, 230);
     height: 400px;
-    width: 50%;
+    width: 30%;
     border-radius: 20px;
     margin: 20px;
     
@@ -463,9 +481,9 @@ header a {
 
 .drug img {
     width: 400px;
-    max-width: 200px;
+    max-width: 250px;
     height: 200px;
-    margin: 10px 20%;
+    margin: 20px 50px;
 }
 .drug h3{
     text-align: center;
@@ -480,16 +498,18 @@ header a {
     background-color: rgb(255, 0, 140);
     color: white;
     border: none;
-    margin-left: 25%;
+    margin-left: 35%;
 }
 
 footer {
     height: 400px;
+    background: rgb(49, 47, 47);
+}
+
+#footer {
     display: flex;
     justify-content: space-between;
-    justify-content: space-around;
-    margin: 10px;
-    background: rgb(49, 47, 47);
+    width: 100%;
 }
 footer a {
     color: white;
@@ -502,17 +522,21 @@ footer h3 {
 }
 
 .customer {
-    display: block;
     margin-left: 20px;
+    width: 50%;
+}
+
+.company {
+    width: 50%;
 }
 
 .contact {
-width: 20%;
-
+    width: 50%;
 }
 
 .newsletter {
-    width: 20%;
+    width: 50%;
+    margin-right: 20px;
 }
 
 .newsletter input {
@@ -529,14 +553,62 @@ width: 20%;
     color:aqua  
 }
 
+.social {
+    height: 70px;
+    margin: 20px;
+    border-top: 1px solid grey;
+}
+.social span {
+    color: white;
+    font-size: .7cm;
+    margin: 20px;
+}
+footer h3 {
+    margin: 20px 20px 10px 20%;
+}
+
 
 
 
 
 @media(max-width:768px) {
+    }
     .services {
+        overflow: visible;
         display: block;
-        width: 200%;
+        width: 95%; 
+        margin: 20px;
+        height: fit-content;
+    }
+    
+    .roles {
+        display: block;
+        width: 100%;
+        height: 350px;
+        
+    }
+    
+    .roles img {
+        height: 200px;
+        width:90%;
+        margin: 20px;
+        
+    }
+
+    .drug {
+        background: rgb(188, 234, 219);
+        height: 400px;
+        width: 90%;
+        border-radius: 50px;
+        margin: 20px;
+        
+    }
+    
+    .drug img {
+        width: 400px;
+        max-width: 80%;
+        height: 230px;
+        margin: 20px 10%;
     }
     .sample {
         display: block;
@@ -545,15 +617,32 @@ width: 20%;
     .slide {
         display:block;
         width: 100%;
+
     }
     .about {
         width: 100%;
     }
     
     .display {
+        width: 90%;
+    }
+    header{
+        display: none;
+    }
+    #mobile {
+        display: flex;
+    }
+    #first button {
+        display: none;
+    }
+
+    footer {
+        height: fit-content;
+    }
+
+    footer {
+        display: block;
         width: 100%;
+        margin: 20px;
     }
-    header a {
-        font-size: 15px;
-    }
-}
+    
