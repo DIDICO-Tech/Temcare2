@@ -74,7 +74,7 @@ nav {
 }
 
 #mobile button {
-    margin: 5px 0 5px 25px;
+    margin: 5px 0 5px 60px;
     background: rgb(255, 255, 255);
     height: 30px;
     width: 70px;
@@ -139,9 +139,9 @@ nav {
     margin-left: 70px;
     font-size: 16px;
     font-style: italic;
-    transition: 3s ease-in-out;
+    transition: 2s ease-in-out;
     animation-name: p;
-    animation-duration: 60s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
@@ -249,11 +249,11 @@ nav {
     }
 
     60% {
-        opacity: 0.5;
+        opacity: 1;
     }
 
     80% {
-        opacity: 0.5;
+        opacity: 1;
     }
 
     100% {
@@ -318,7 +318,7 @@ nav {
 .welcome {
     margin: 10px;
     background-color: inherit;
-    height: 120px;
+    height: 200px;
 }
  .welcome h1 {
     text-align: center; 
@@ -506,6 +506,16 @@ nav {
         background-repeat: no-repeat;}
 }
 
+
+#product {
+    background: white;
+}
+#product h1 {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
 .products {
     max-width: 100%; 
     margin: 20px;
@@ -667,6 +677,7 @@ footer h3 {
     #first button {
         display: none;
     }
+    
 
     .temcare {
         display: block;
@@ -685,6 +696,7 @@ footer h3 {
         color: white;
         margin-left: 20px;
         font-size: 16px;
+        font-weight: 700;
         
     }
     
@@ -704,6 +716,7 @@ footer h3 {
         color: BLACK;
         margin-left: 20px;
         font-size: 8px;
+        font-weight: 800;
     }
     
     .temcare img {
@@ -712,7 +725,7 @@ footer h3 {
         margin: 30px 0 0 15%;
     }
     .welcome {
-        height: 160px;
+        height: 200px;
     }
 
     .director {
