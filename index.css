@@ -69,7 +69,7 @@ nav {
 }
 
 #mobile button {
-    margin: 5px 0 5px 200px;
+    margin: 5px 0 5px 25px;
     background: rgb(255, 255, 255);
     height: 30px;
     width: 70px;
@@ -151,20 +151,25 @@ nav {
 }
 
 @keyframes taiwo {
-    0% {background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
+    0% {background-image: url(istockphoto-1142519210-612x612.jpg);
         background-repeat: no-repeat;
+        background-size: contain;
     }
-    40% {background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
+    40% {background-image: url(istockphoto-1142519210-612x612.jpg);
         background-repeat: no-repeat;
+        background-size: contain;
     }
     60% {background-image: url(istockphoto-1142519210-612x612.jpg);
         background-repeat: no-repeat;
+        background-size: contain;
     }
     80% {background-image: url(istockphoto-1142519210-612x612.jpg);
         background-repeat: no-repeat;
+        background-size: contain;
     }
     100% {background-image: url(istockphoto-1142519210-612x612.jpg);
         background-repeat: no-repeat;
+        background-size: contain;
     }
     }
 @keyframes H1 {
@@ -502,7 +507,7 @@ nav {
 }
 
 footer {
-    height: 400px;
+    height: fit-content;
     background: rgb(49, 47, 47);
 }
 
@@ -564,7 +569,7 @@ footer h3 {
     margin: 20px;
 }
 footer h3 {
-    margin: 20px 20px 10px 20%;
+    margin: 20px;
 }
 
 
@@ -573,26 +578,104 @@ footer h3 {
 
 @media(max-width:768px) {
     
+    .temcare {
+        border-radius: 50px;
+        max-width: 100%;
+        width: 100%;
+        background: linear-gradient(rgb(4, 64, 85), rgb(9, 152, 152), green);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    .temcare h1 {
+        color: white;
+        margin-left: 20px;
+        font-size: 16px;
+        
+    }
+    
+    .temcare h2 {
+        color: rgb(16, 223, 202);
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        opacity: 0;
+        transition: 2s ease-in;
+        animation-name: H2;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    
+    .temcare p {
+        color: BLACK;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    
+    .temcare img {
+        width: 80px;
+        height: 80px;
+        margin: 30px 0 0 15%;
+
+    }
+
+    .slide {
+        margin: 10px;
+        display:flex;
+        justify-content: space-around;
+        height: 400px;
+        max-width: 95%;
+    }
+    
+    .about {
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .display {
+        width: 100%;
+        height: 250px;
+        background: url(istockphoto-458633357-612x612.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    .slider-nav {
+        display: none;
+    }
     .services {
         overflow: visible;
         display: block;
-        width: 95%; 
-        margin: 20px;
+        width: 100%; 
+        margin: 0;
         height: fit-content;
     }
     
     .roles {
         display: block;
         width: 100%;
-        height: 350px;
+        height: 300px;
         
     }
     
     .roles img {
-        height: 200px;
-        width:90%;
-        margin: 20px;
-        
+        height: 150px;
+        width:100%;
+        margin: 0;
+    }
+
+    .roles button {
+        width: 200px;
+        height: 50px;
+        color: white;
+        background-color: rgb(208, 74, 199);
+        font-size: 15px;
+        font-weight: 900;
+        margin-left: 15%;
     }
 
     .drug {
@@ -638,12 +721,7 @@ footer h3 {
 
     footer {
         height: fit-content;
-    }
-
-    footer {
         display: block;
-        width: 100%;
-        margin: 20px;
     }
 }
     
