@@ -572,7 +572,7 @@ footer h3 {
 
 
 @media(max-width:768px) {
-    }
+    
     .services {
         overflow: visible;
         display: block;
@@ -645,4 +645,5 @@ footer h3 {
         width: 100%;
         margin: 20px;
     }
+}
     
