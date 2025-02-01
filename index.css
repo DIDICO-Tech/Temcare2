@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(216, 246, 236);
+    background-color: rgb(204, 223, 217);
 }
 
 /* Header Section */
@@ -96,6 +96,7 @@ nav {
 /* Section 2 - Tem-care*/
 
 .temcare {
+    display: none;
     border-radius: 50px;
     max-width: 100%;
     width: 98%;
@@ -108,7 +109,6 @@ nav {
     animation-duration: 10s;
     transition: 2s ease-in-out;
     animation-iteration-count: infinite;
-    
 }
 .temcare h1 {
     color: white;
@@ -314,6 +314,66 @@ nav {
         opacity: 1;
     }
 }
+
+.welcome {
+    margin: 10px;
+    background-color: inherit;
+    height: 120px;
+}
+ .welcome h1 {
+    text-align: center; 
+ }
+ .welcome h2 {
+    text-align: center; 
+ }
+ .welcome h3 {
+    text-align: center; 
+ }
+ .welcome p {
+    text-align: center; 
+ }
+
+
+.director {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.director h1 {
+    margin-top: 20px;
+}
+
+.director h1 {
+    text-align: center;
+}
+
+.director h2 {
+    text-align: center;
+}
+
+.director img {
+    height: 350px;
+    width: 100%;
+}
+
+.info {
+    background: rgb(242, 238, 238);
+    
+}
+
+.info h1 {
+    color:rgb(83, 158, 183);
+    text-align: center;
+}
+
+.info h2 {
+    color:rgb(216, 54, 214);
+    text-align: center;
+}
+
+ 
+
 
 /* Images Slider Section*/ 
 
@@ -581,11 +641,10 @@ footer h3 {
 
 
 
-@media(max-width:768px) {
+@media(max-width:580px) {
     
-
     #first {
-        height: 60px;
+        height: 70px;
         display: flex;
         justify-content: space-between;
     }
@@ -593,9 +652,24 @@ footer h3 {
     .logo {
         width: 60px;
         height: 50px;
-        margin: 10px 40px;
+        margin: 5px 40px 0 30px;
+        border-left: 2px solid rgb(0, 0, 0);
+    
     }
+
+    header{
+        display: none;
+    }
+    #mobile {
+        margin-top: -30px;
+        display: flex;
+    }
+    #first button {
+        display: none;
+    }
+
     .temcare {
+        display: block;
         border-radius: 50px;
         max-width: 100%;
         width: 100%;
@@ -636,8 +710,46 @@ footer h3 {
         width: 80px;
         height: 80px;
         margin: 30px 0 0 15%;
-
     }
+    .welcome {
+        height: 160px;
+    }
+
+    .director {
+        display: block;
+    }
+
+    .director h1 {
+        margin-top: 20px;
+    }
+
+    .director h1 {
+        text-align: center;
+    }
+
+    .director h2 {
+        text-align: center;
+    }
+
+    .director img {
+        height: 350px;
+    }
+
+    .info {
+        background: rgb(242, 238, 238);
+        
+    }
+
+    .info h1 {
+        color:rgb(83, 158, 183);
+        text-align: center;
+    }
+
+    .info h2 {
+        color:rgb(216, 54, 214);
+        text-align: center;
+    }
+
 
     .slide {
         margin: 10px;
@@ -648,13 +760,14 @@ footer h3 {
     }
     
     .about {
+        display: none;
         width: 100%;
         text-align: justify;
     }
     
     .display {
         width: 100%;
-        height: 250px;
+        height
         background: url(istockphoto-458633357-612x612.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -694,11 +807,21 @@ footer h3 {
         font-weight: 900;
         margin-left: 15%;
     }
+    #product {
+        background: white;
+    }
+    #product h1 {
+        color: red;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 20px;
+    }
 
     .products {
         max-width: 100%; 
         margin: 10px;
         background-color: inherit;
+        
     }
     
     .category {
@@ -746,7 +869,7 @@ footer h3 {
         background-color: rgb(255, 0, 140);
         color: white;
         border: none;
-        margin: -10px 0 10px 25%;
+        margin: -10px 0 10px 35%;
     }
     .sample {
         display: block;
@@ -766,19 +889,11 @@ footer h3 {
     .display {
         width: 90%;
     }
-    header{
-        display: none;
-    }
-    #mobile {
-        display: flex;
-    }
-    #first button {
-        display: none;
-    }
-
+    
     footer {
         height: fit-content;
         display: block;
     }
 }
+
     
