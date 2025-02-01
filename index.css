@@ -27,10 +27,15 @@ body {
 
 #span {
     display:flex;
+    margin: 10px;
+}
+
+span {
+    padding-left: 20px;
 }
 
 .icon {
-    font-size: 1cm;
+    font-size: .7cm;
     color: rgb(34, 1, 1);
 }
 
@@ -479,7 +484,7 @@ nav {
     background: rgb(236, 230, 230);
     height: 400px;
     width: 30%;
-    border-radius: 20px;
+    border-radius: 50%;
     margin: 20px;
     
 }
@@ -578,6 +583,18 @@ footer h3 {
 
 @media(max-width:768px) {
     
+
+    #first {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 60px;
+        height: 50px;
+        margin: 10px 40px;
+    }
     .temcare {
         border-radius: 50px;
         max-width: 100%;
@@ -612,7 +629,7 @@ footer h3 {
     .temcare p {
         color: BLACK;
         margin-left: 20px;
-        font-size: 12px;
+        font-size: 8px;
     }
     
     .temcare img {
@@ -678,24 +695,64 @@ footer h3 {
         margin-left: 15%;
     }
 
+    .products {
+        max-width: 100%; 
+        margin: 10px;
+        background-color: inherit;
+    }
+    
+    .category {
+        background-color: rgb(136, 49, 49);
+        margin: 10px;
+        max-width: 100%;
+    }
+    
+    .category h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sample {
+        position:relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        column-gap: 10px;
+    
+    }
+
     .drug {
-        background: rgb(188, 234, 219);
-        height: 400px;
-        width: 90%;
-        border-radius: 50px;
-        margin: 20px;
+        background: rgb(3, 239, 176);
+        height: 350px;
+        width: 100%;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        margin: 10px 0;
         
     }
     
     .drug img {
-        width: 400px;
-        max-width: 80%;
-        height: 230px;
-        margin: 20px 10%;
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .drug button {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: rgb(255, 0, 140);
+        color: white;
+        border: none;
+        margin: -10px 0 10px 25%;
     }
     .sample {
         display: block;
         width: 100%;
+        height: fit-content;
+        margin: 0;
     }
     .slide {
         display:block;
